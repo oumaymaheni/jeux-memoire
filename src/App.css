@@ -1,0 +1,20 @@
+
+/* S'assurer que le html et body prennent toute la hauteur */
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden; /* Empêche le défilement */
+}
+
+
+body {
+  background-image: url('./Components/image/table.jpeg');
+  background-size: cover; /* Assurez-vous que l'image couvre toute la zone */
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh; /* Assurez-vous que la hauteur minimum est de 100vh */
+  display: flex;
+  justify-content: center; /* Centrer horizontalement */
+  align-items: center; /* Centrer verticalement */
+}
+

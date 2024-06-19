@@ -1,0 +1,128 @@
+#star {
+  display: flex;
+  justify-content: center;
+  font-family: Forte;
+  color: white;
+  font-size: 50px;
+  text-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+  position: relative;
+  bottom: 90px;
+}
+
+.image-container {
+  height: 600px;
+  width: 480px;
+  border: 1px solid black;
+  position: relative;
+  bottom: 70px;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.image-box2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.image-box2 .card {
+  height: 140px;
+  width: 110px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px; /* Required for 3D transform effect */
+  cursor: pointer; /* Change cursor to pointer to indicate clickability */
+}
+
+.image-box2 .card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.image-box2 .card-inner img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* Hide the back of the image when flipped */
+  display: none; /* Initially hide the image */
+}
+
+.image-box2 .card.revealed .card-inner {
+  transform: rotateY(180deg);
+}
+
+.image-box2 .card.revealed .card-inner img {
+  display: block; /* Display the image when revealed */
+}
+
+.image-box2 .card.revealed {
+  background-color: transparent; /* Remove the white background */
+}
+#chronometre {
+  border: 1px solid black;
+  width: 75px; /* Ajustez la largeur pour mieux accueillir le contenu */
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 20px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+ color:black;
+  border-radius: 5px;
+  position: relative;
+  top: 20px;
+  left: 950px;
+}
+#t1{
+  border: 1px solid black;
+  width: 60px; /* Ajustez la largeur pour mieux accueillir le contenu */
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 20px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+ color:black;
+  border-radius: 5px;
+  position: relative;
+  top: 120px;
+  left: 950px;
+}
+
+.play-pause-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  position: relative;
+  right: 600px;
+  bottom:160px;
+ 
+}
+
+.play-pause-button img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s;
+  width: 30px;
+  height: 30px;
+}
+
+.play-pause-button img:hover {
+  transform: scale(1.1);
+}
+.alert{
+  position: absolute;
+  top:110px;
+  font-size:30px;
+  width: 510px;
+}
